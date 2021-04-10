@@ -5,39 +5,54 @@
 
 body {
   background-color: lightgray;
-}
-
-.black {
-  background-color: black;
-  height: 100px;
-}
-
-.red {
-  background-color: red;
-  height: 100px;
-}
-
-.yellow {
-  background-color: yellow;
-  height: 100px;
+  width: 1400px;
 }
 
 main {
   width: 500px;
-  position: relative;
-  top: 25%;
-  left: 25%;
+  margin: 50px auto;
 }
 
 .flags-a {
   padding-top: 50px;
 }
 
+.black-a {
+  background-color: black;
+  height: 100px;
+}
+
+.red-a {
+  background-color: #dd0000;
+  height: 100px;
+}
+
+.yellow-a {
+  background-color: #ffce00;
+  height: 100px;
+}
+
 .flags-b {
   padding-top: 50px;
 }
 
-.white-bg {
+.blue-b {
+  float: left;
+  background-color: #0055a4;
+  width: 33.33%;
+  height: 300px;
+}
+
+.white-b {
+  float: left;
   background-color: white;
+  width: 33.33%;
+  height: 300px;
+}
+
+.red-b {
+  float: left;
+  background-color: #ef4135;
+  width: 33.33%;
   height: 300px;
 }
