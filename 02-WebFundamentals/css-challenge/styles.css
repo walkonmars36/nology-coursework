@@ -7,22 +7,37 @@ body {
   background-color: lightgray;
 }
 
-.flags {
-  width: 500px;
-  margin: 250px auto;
-}
-
-#black {
+.black {
   background-color: black;
   height: 100px;
 }
 
-#red {
+.red {
   background-color: red;
   height: 100px;
 }
 
-#yellow {
+.yellow {
   background-color: yellow;
   height: 100px;
+}
+
+main {
+  width: 500px;
+  position: relative;
+  top: 25%;
+  left: 25%;
+}
+
+.flags-a {
+  padding-top: 50px;
+}
+
+.flags-b {
+  padding-top: 50px;
+}
+
+.white-bg {
+  background-color: white;
+  height: 300px;
 }
