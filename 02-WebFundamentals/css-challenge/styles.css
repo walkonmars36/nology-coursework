@@ -13,30 +13,71 @@ main {
   margin: 50px auto;
 }
 
-.flags-a {
+#flags-a {
   padding-top: 50px;
 }
 
-.black-a {
+#hungary {
+  display: none;
+}
+
+#flags-a:hover #german {
+  display: none;
+}
+
+#flags-a:hover #hungary {
+  display: block;
+}
+
+.black-germ {
   background-color: black;
   height: 100px;
 }
 
-.red-a {
+.red-germ {
   background-color: #dd0000;
   height: 100px;
 }
 
-.yellow-a {
+.yellow-germ {
   background-color: #ffce00;
   height: 100px;
 }
 
-.flags-b {
+.red-hung {
+  background-color: #cd2a3e;
+  height: 100px;
+}
+
+.white-hung {
+  background-color: white;
+  height: 100px;
+}
+
+.green-hung {
+  background-color: #436f4d;
+  height: 100px;
+}
+
+/* RULES FOR FRENCH AND IRISH FLAGS*/
+
+#flags-b {
   padding-top: 50px;
 }
 
-.blue-b {
+#ireland {
+  display: none;
+}
+
+#flags-b:hover #france {
+  display: none;
+}
+
+#flags-b:hover #ireland {
+  display: block;
+}
+
+.blue-fr {
   float: left;
   background-color: #0055a4;
   width: 33.33%;
@@ -50,9 +91,23 @@ main {
   height: 300px;
 }
 
-.red-b {
+.red-fr {
   float: left;
   background-color: #ef4135;
+  width: 33.33%;
+  height: 300px;
+}
+
+.green-ire {
+  float: left;
+  background-color: #169b62;
+  width: 33.33%;
+  height: 300px;
+}
+
+.orange-ire {
+  float: left;
+  background-color: #ff883e;
   width: 33.33%;
   height: 300px;
 }
