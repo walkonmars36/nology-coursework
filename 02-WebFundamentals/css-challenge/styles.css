@@ -13,6 +13,8 @@ main {
   margin: 50px auto;
 }
 
+/* RULES FOR GERMAN AND HUNGARIAN FLAGS */
+
 #flags-a {
   padding-top: 50px;
 }
@@ -21,6 +23,8 @@ main {
   display: none;
 }
 
+/* HOVER RULES */
+
 #flags-a:hover #german {
   display: none;
 }
@@ -28,6 +32,8 @@ main {
 #flags-a:hover #hungary {
   display: block;
 }
+
+/* RULES FOR GERMAN FLAG */
 
 .black-germ {
   background-color: black;
@@ -43,6 +49,8 @@ main {
   background-color: #ffce00;
   height: 100px;
 }
+
+/* RULES FOR HUNGARIAN FLAG */
 
 .red-hung {
   background-color: #cd2a3e;
@@ -65,17 +73,7 @@ main {
   padding-top: 50px;
 }
 
-#ireland {
-  display: none;
-}
-
-#flags-b:hover #france {
-  display: none;
-}
-
-#flags-b:hover #ireland {
-  display: block;
-}
+/* RULES FOR FRENCH FLAG */
 
 .blue-fr {
   float: left;
@@ -97,6 +95,8 @@ main {
   width: 33.33%;
   height: 300px;
 }
+
+/* RULES FOR IRISH FLAG */
 
 .green-ire {
   float: left;

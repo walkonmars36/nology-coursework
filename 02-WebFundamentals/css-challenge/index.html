@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
     <title>CSS Flag Challenge</title>
   </head>
@@ -37,5 +38,12 @@
         </div>
       </div>
     </main>
+
+    <script>
+      $("#ireland").hide();
+      $("#france, #ireland").on("click", function () {
+        $("#france, #ireland").toggle();
+      });
+    </script>
   </body>
 </html>
