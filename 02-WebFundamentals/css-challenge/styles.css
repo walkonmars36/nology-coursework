@@ -47,6 +47,7 @@ main {
   width: 600px;
   height: 800px;
   overflow: auto;
+  box-shadow: rgb(6, 32, 86) 0px 20px 30px -10px;
 }
 
 /* CONTAINER RULES FOR FLAGS-A & FLAGS-B */
