@@ -1,37 +1,49 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-  width: 1400px;
   background-image: url("./images/christian-lue-8Yw6tsB8tnc-unsplash.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
 }
 
 header {
-  height: 80px;
-  padding: 40px;
+  height: 100px;
+  padding: 75px;
+  background-color: black;
+  opacity: 0.75;
   color: whitesmoke;
 }
 header h1 {
   font-size: 40px;
-  text-align: center;
+  text-align: left;
+}
+
+h1::after {
+  content: " - To create the German and French flags.";
+  font-size: 0.5em;
 }
 
 header p {
-  width: 500px;
   margin: auto;
+  padding-top: 30px;
+}
+
+h2 {
+  color: grey;
+  padding-bottom: 10px;
 }
 
 main {
-  background-color: whitesmoke;
-  margin: auto;
+  background-color: #e8e8e8;
+  margin: 100px auto;
+  padding-bottom: 50px;
   width: 600px;
-  height: 750px;
+  height: 800px;
   overflow: auto;
 }
 
@@ -40,7 +52,7 @@ main {
 #flags-a {
   width: 500px;
   margin: 0 auto;
-  padding: 50px 50px 25px 50px;
+  padding: 50px 50px 25px;
 }
 
 /* HOVER RULES FOR FLAGS-A */
@@ -96,7 +108,7 @@ main {
 #flags-b {
   width: 500px;
   margin: 0 auto;
-  padding: 25px 50px 50px 50px;
+  padding: 25px 50px;
 }
 
 /* RULES FOR FRENCH FLAG */
