@@ -12,6 +12,8 @@ body {
   background-repeat: no-repeat;
 }
 
+/* Header section */
+
 header {
   min-height: 100px;
   padding: 75px;
@@ -34,6 +36,13 @@ header p {
   padding-top: 30px;
   line-height: 1.5;
 }
+
+img {
+  float: right;
+  margin-right: 0;
+}
+
+/* main container rules */
 
 h2 {
   color: #606060;
