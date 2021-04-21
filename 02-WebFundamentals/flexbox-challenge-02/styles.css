@@ -63,29 +63,58 @@ header {
 
 .main {
   flex: 3;
+  margin-right: 20px;
 }
 
-.main h3 {
-  font-size: 1.2em;
-}
-
-.panel {
+.panel-1,
+.panel-2,
+.panel-3 {
   border: 3px solid black;
   padding: 20px;
   margin-top: 2%;
+  display: flex;
 }
 
-.panel ul {
-  list-style-position: inside;
-  padding: 20px;
-  line-height: 2;
+.panel-1 {
+  justify-content: space-around;
+}
+
+.panel-2 {
+  justify-content: flex-end;
+}
+
+.panel-3 {
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+.panel-1 > div {
+  background-color: black;
+  color: white;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+.panel-2 > div {
+  background-color: black;
+  color: white;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+.panel-3 > div {
+  background-color: black;
+  color: white;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
 }
 
 .sidepanel {
-  flex: 1;
   border: 3px solid black;
-  margin-left: 20px;
-  margin-top: 1.5%;
+
+  margin-top: 10px;
+  flex: 1;
 }
 
 .sidepanel h3 {
