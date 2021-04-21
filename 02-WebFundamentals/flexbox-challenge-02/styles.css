@@ -58,7 +58,7 @@ header {
 .wrapper {
   display: flex;
   width: 95%;
-  margin: 1% auto;
+  margin: 2% auto;
 }
 
 .main {
@@ -71,16 +71,18 @@ header {
 .panel-3 {
   border: 3px solid black;
   padding: 20px;
-  margin-top: 2%;
+
   display: flex;
 }
 
 .panel-1 {
   justify-content: space-around;
+  margin-bottom: 20px;
 }
 
 .panel-2 {
   justify-content: flex-end;
+  margin-bottom: 20px;
 }
 
 .panel-3 {
@@ -112,8 +114,6 @@ header {
 
 .sidepanel {
   border: 3px solid black;
-
-  margin-top: 10px;
   flex: 1;
 }
 
