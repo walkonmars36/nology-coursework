@@ -4,12 +4,12 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
-body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 1rem;
+}
+
+body {
   background-color: #f5f5f5;
 }
 .container {
@@ -61,66 +61,71 @@ header {
   margin: 2% auto;
 }
 
-.main {
-  flex: 3;
-  margin-right: 20px;
+.rectangles {
+  /*flex: 3;*/
+  flex-basis: 75%;
+  margin-right: 1.25em;
 }
 
-.panel-1,
-.panel-2,
-.panel-3 {
+.squares-1,
+.squares-2,
+.squares-3 {
   border: 3px solid black;
-  padding: 20px;
-
+  padding: 1.25em;
   display: flex;
 }
 
-.panel-1 {
+.squares-1 {
   justify-content: space-around;
-  margin-bottom: 20px;
+  margin-bottom: 1.25em;
 }
 
-.panel-2 {
+.squares-2 {
   justify-content: flex-end;
-  margin-bottom: 20px;
+  margin-bottom: 1.25em;
 }
 
-.panel-3 {
+.squares-3 {
   flex-direction: row-reverse;
   justify-content: flex-end;
 }
 
-.panel-1 > div {
+.squares-1 > div {
   background-color: black;
   color: white;
-  width: 100px;
-  height: 100px;
-  margin: 10px;
+  width: 6.25em;
+  height: 6.25em;
+  margin: 0.625em;
 }
-.panel-2 > div {
+.squares-2 > div {
   background-color: black;
   color: white;
-  width: 100px;
-  height: 100px;
-  margin: 10px;
+  width: 6.25em;
+  height: 6.25em;
+  margin: 0.625em;
 }
-.panel-3 > div {
+.squares-3 > div {
   background-color: black;
   color: white;
-  width: 100px;
-  height: 100px;
-  margin: 10px;
+  width: 6.25em;
+  height: 6.25em;
+  margin: 0.625em;
 }
 
 .sidepanel {
   border: 3px solid black;
-  flex: 1;
+  /*flex: 1;*/
+  flex-basis: 25%;
+  align-items: flex-start;
 }
 
 .sidepanel h3 {
-  padding: 20px 10px 10px;
+  padding: 1.2em 0.5em 0.6em;
+  font-weight: 600;
+  font-size: 1.25rem;
 }
 
 p {
-  padding: 5px 10px 0 10px;
+  font-size: 0.875rem;
+  padding: 0 0.625em 0 0.625em;
 }
