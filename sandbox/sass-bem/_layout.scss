@@ -7,7 +7,7 @@
 
 .main {
   height: 30vh;
-  background-color: $color-primary;
+  background-color: $color-grey;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,16 +19,22 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  &__thanks--content {
+    width: 300px;
+  }
 }
 
-.footer {
+.footer ul {
   height: 10vh;
+  padding: 0 5em;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
   background-color: $color-primary;
+  justify-content: space-between;
+  align-items: center;
 
-  &__content {
+  li {
     color: $color-white;
+    list-style-type: none;
   }
 }

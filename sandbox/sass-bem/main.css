@@ -14,7 +14,7 @@ a:visited {
 
 .navigation {
   height: 10vh;
-  padding: 0 2.5em;
+  padding: 0 5em;
   display: flex;
   background-color: #28527a;
   justify-content: space-between;
@@ -42,10 +42,11 @@ a:visited {
   background-color: #55a5f0;
 }
 .button--logout {
-  width: 12%;
+  width: 80%;
   color: #28527a;
   background-color: #fafafa;
   border: 2px solid #55a5f0;
+  padding: auto;
 }
 
 .intro {
@@ -55,13 +56,14 @@ a:visited {
   color: #28527a;
   font-size: 3em;
 }
-.intro__sub-heading {
-  font-family: "Dancing Script", cursive;
-  font-size: 1.5625em;
-  margin: 1.25em 0;
-}
 .intro__button {
   margin: 0 auto;
+}
+
+.sub-heading {
+  font-family: "Dancing Script", cursive;
+  font-size: 2em;
+  margin: 1em 0;
 }
 
 .wave {
@@ -69,18 +71,20 @@ a:visited {
 }
 
 .second-wave {
-  vertical-align: top;
   transform: rotate(180deg);
 }
 
 .form {
+  width: 18.75em;
   background-color: #fafafa;
-  padding: 1.25em;
+  padding: 1.75em;
   border-radius: 0.625em;
   display: flex;
   flex-direction: column;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
 }
 .form__input {
+  padding: 0.5em;
   margin-bottom: 1.25em;
 }
 
@@ -106,14 +110,19 @@ a:visited {
   justify-content: center;
   align-items: center;
 }
-
-.footer {
-  height: 10vh;
-  padding: 0 2.5em;
-  align-items: center;
-  background-color: #28527a;
+.thanks__thanks--content {
+  width: 300px;
 }
-.footer__content {
-  color: #fafafa;
+
+.footer ul {
+  height: 10vh;
+  padding: 0 5em;
   display: flex;
+  background-color: #28527a;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer ul li {
+  color: #fafafa;
+  list-style-type: none;
 }
