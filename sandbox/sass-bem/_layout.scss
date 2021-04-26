@@ -14,20 +14,17 @@
 }
 
 .thanks {
-  height: 30vh;
+  height: 40vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  &__thanks--content {
-    width: 300px;
-  }
 }
 
 .footer ul {
+  margin-top: 8em;
   height: 10vh;
-  padding: 0 5em;
+  padding: 0 3em 0 2em;
   display: flex;
   background-color: $color-primary;
   justify-content: space-between;

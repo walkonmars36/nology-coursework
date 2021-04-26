@@ -29,7 +29,7 @@
   }
 
   &--logout {
-    width: 80%;
+    width: 100%;
     color: $color-primary;
     background-color: $color-white;
     border: 2px solid $color-primary-light;
@@ -54,7 +54,8 @@
   margin: 1em 0;
 }
 
-.wave {
+#wave {
+  margin: 0;
   vertical-align: top;
 }
 
