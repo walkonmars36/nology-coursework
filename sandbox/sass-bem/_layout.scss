@@ -7,7 +7,7 @@
 
 .main {
   height: 30vh;
-  background-color: $color-grey;
+  background-color: $color-primary;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,13 +23,12 @@
 
 .footer {
   height: 10vh;
-  padding: 0 2.5em;
-
+  display: flex;
   align-items: center;
+  justify-content: space-between;
   background-color: $color-primary;
 
   &__content {
     color: $color-white;
-    display: flex;
   }
 }
