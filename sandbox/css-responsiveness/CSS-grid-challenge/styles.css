@@ -9,8 +9,8 @@ section {
   margin: auto;
   display: grid;
   grid-template-columns: auto auto auto auto auto auto;
-  grid-gap: 10px;
-  background-color: #2196f3;
+  gap: 10px;
+  background-color: cornflowerblue;
   padding: 10px;
 }
 section div {
