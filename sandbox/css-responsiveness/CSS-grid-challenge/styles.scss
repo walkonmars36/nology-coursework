@@ -5,7 +5,8 @@
 }
 
 section {
-  width: 100%;
+  width: 90%;
+  margin: auto;
   display: grid;
   grid-template-columns: auto auto auto auto auto auto;
   grid-gap: 10px;
@@ -18,7 +19,9 @@ section {
     padding: 20px 0;
     font-size: 2em;
   }
+}
 
+.grid {
   &__header {
     grid-area: 1 / 1 / span 1 / span 6;
   }
