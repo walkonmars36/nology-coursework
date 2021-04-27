@@ -36,7 +36,7 @@ header h1 {
   background-color: white;
   color: midnightblue;
   box-shadow: 5px 5px 5px 5px lightgray;
-  opacity: 0.5;
+  opacity: 0.8;
   transition: opacity 0.3s ease-in;
 }
 
@@ -72,6 +72,53 @@ span {
   color: #b48ce0;
 }
 
-i {
-  margin-left: 3px;
+.fa-instagram {
+  margin: 5px;
+}
+
+.flex-container-1 {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-container-1 > div:nth-child(2) {
+  margin-left: 10px;
+}
+
+.vl-1 {
+  display: inline-block;
+  border-left: 2px solid #b48ce0;
+  width: 2px;
+  height: 100px;
+  position: relative;
+  left: 28%;
+}
+
+.vl-2 {
+  display: inline-block;
+  border-left: 2px solid #b48ce0;
+  width: 2px;
+  height: 100px;
+  position: relative;
+  left: 71%;
+}
+
+.flex-container-2 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.vl-3 {
+  display: inline-block;
+  border-left: 2px solid #b48ce0;
+  width: 2px;
+  height: 100px;
+  position: relative;
+  left: 75%;
+}
+
+.flex-container-3 {
+  width: 97%;
+  display: flex;
+  justify-content: flex-end;
 }
