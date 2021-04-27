@@ -5,6 +5,7 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   color: #333333;
+  scroll-behavior: smooth;
 }
 
 a:link,
