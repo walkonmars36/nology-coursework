@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-gap: 10px;
+  background-color: #2196f3;
+  padding: 10px;
+}
+section div {
+  background-color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 2em;
+}
+section__header {
+  grid-area: 1/1/span 1/span 6;
+}
+section__menu {
+  grid-area: 2/1/span 2/span 1;
+}
+section__main {
+  grid-area: 2/2/span 1/span 3;
+}
+section__right {
+  grid-area: 2/5/span 1/span 2;
+}
+section__footer {
+  grid-area: 3/2/span 1/span 5;
+}
