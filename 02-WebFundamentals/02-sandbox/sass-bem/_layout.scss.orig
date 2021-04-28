@@ -1,0 +1,37 @@
+.header {
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  height: 30vh;
+  background-color: $color-grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.thanks {
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer ul {
+  margin-top: 8em;
+  height: 10vh;
+  padding: 0 2em 0 2em;
+  display: flex;
+  background-color: $color-primary;
+  justify-content: space-between;
+  align-items: center;
+
+  li {
+    color: $color-white;
+    list-style-type: none;
+  }
+}

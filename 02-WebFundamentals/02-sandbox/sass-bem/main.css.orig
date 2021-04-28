@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  color: #333333;
+  scroll-behavior: smooth;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+.header {
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  height: 30vh;
+  background-color: #d0d0d0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.thanks {
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer ul {
+  margin-top: 8em;
+  height: 10vh;
+  padding: 0 2em 0 2em;
+  display: flex;
+  background-color: #28527a;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer ul li {
+  color: #fafafa;
+  list-style-type: none;
+}
+
+.navigation {
+  height: 10vh;
+  padding: 0 3em;
+  display: flex;
+  background-color: #28527a;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: "Dancing Script", cursive;
+  color: #fafafa;
+  font-size: 2em;
+}
+
+.button {
+  display: block;
+  width: 6.25em;
+  padding: 0.625em 1.25em;
+  color: #fafafa;
+  background-color: #f0a500;
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+.button:hover {
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+}
+.button--navigation:hover {
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.button--form {
+  width: 100%;
+  background-color: #55a5f0;
+}
+.button--logout {
+  width: 100%;
+  color: #28527a;
+  background-color: #fafafa;
+  border: 2px solid #55a5f0;
+}
+
+.intro {
+  text-align: center;
+}
+.intro__heading {
+  color: #28527a;
+  font-size: 3em;
+}
+.intro__button {
+  margin: 0 auto;
+}
+
+.sub-heading {
+  font-family: "Dancing Script", cursive;
+  font-size: 2em;
+  margin: 1em 0;
+}
+
+#wave {
+  vertical-align: top;
+}
+
+.second-wave {
+  transform: rotate(180deg);
+}
+
+.form {
+  width: 18.75em;
+  background-color: #fafafa;
+  padding: 1.75em;
+  border-radius: 0.625em;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2);
+}
+.form__input {
+  padding: 0.5em;
+  margin-bottom: 1.25em;
+}
