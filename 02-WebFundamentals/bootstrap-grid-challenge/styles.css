@@ -1,0 +1,18 @@
+[class^="con"] {
+  background-color: #c3aed6;
+}
+
+[class^="col"] {
+  background-color: #ffd5cd;
+  color: #8675a9;
+  min-height: 6.25rem;
+  border: 2px solid #c3aed6;
+  text-align: center;
+  border-radius: 5px;
+}
+
+[class^="row"] {
+  border: 5px solid white;
+  padding: 10px;
+  min-height: 18.75rem;
+}
