@@ -6,9 +6,8 @@
 
 The 'Flag' challenge, the first image shows the initial state with the German and French flags, the second showing the hovered German - Hungarian flag and the clicked French - Irish flag
 
-![](2021-05-20-12-43-22.png)
-
-![](2021-05-20-12-46-26.png)
+![](2021-05-20-13-49-06.png)
+![](2021-05-20-13-50-10.png)
 
 ---
 
