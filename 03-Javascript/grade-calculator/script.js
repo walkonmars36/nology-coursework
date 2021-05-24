@@ -1,5 +1,11 @@
 function handleCalculateGrade(event) {
-  const grade = event.target.value;
+  let grade = event.target.value;
+
+  if (!grade) {
+    return;
+  }
+
+  grade = grade.toUpperCase();
 
   let percentage;
   switch (grade) {
