@@ -8,8 +8,24 @@
     <script src="script.js"></script>
   </head>
   <body>
-    <h1>Control Flow And Types Challenges </h1>
+    <h1 style="text-align: center">Control Flow And Types Challenges </h1>
+
+    <h2>Check if your number is positive or negative</h2>
 
     <input type="text" onblur="handlePositiveNegativeNumber(event)" />
+
+    <h2>Create a switch case for vegetable prices at a supermarket</h2>
+    <p>Select a vegetable to see it's price.</p>
+
+    <select id="mySelection" onchange="chooseVeg()">
+      <option value="0">→ Select</option>
+      <option value="potatoes">Potatoes</option>
+      <option value="carrots">Carrots</option>
+      <option value="broccoli">Broccoli</option>
+      <option value="cabbage">Cabbage</option>
+      <option value="asparagus">Asparagus</option>
+    </select>
+
+    <p id="displayPrice"></p>
   </body>
 </html>
