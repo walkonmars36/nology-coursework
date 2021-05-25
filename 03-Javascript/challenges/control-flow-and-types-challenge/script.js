@@ -28,8 +28,6 @@ console.log("The largest number is " + largest);
 
 // Create a 'days until the weekend' switch case
 
-let day;
-
 switch (new Date().getDay()) {
   case 0:
     day = "It's Sunday, enjoy the last day of the weekend ";
@@ -72,10 +70,8 @@ function chooseVeg() {
 
   switch (vegChoice) {
     case "potatoes":
-      message = "and carrots are both 65p per kg";
-      break;
     case "carrots":
-      message = "and potatoes are both 65p per kg";
+      message = "are 65p per kg";
       break;
     case "broccoli":
       message = "is 50p per kg";
