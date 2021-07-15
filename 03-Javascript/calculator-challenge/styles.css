@@ -27,7 +27,6 @@
   display: grid;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
-  background: #d0d0d0;
   gap: 0.125em;
 }
 
@@ -45,7 +44,7 @@
   font-size: 1.5rem;
 }
 
-.equalBtn:active, .equalBtn:focus {
+.equalBtn:active, .equalBtn:focus, .equalBtn:hover {
   background: #f28d00;
 }
 
@@ -61,9 +60,10 @@
   background: #dcdcdc;
 }
 
-.operatorBtn:active, .operatorBtn:focus,
+.operatorBtn:active, .operatorBtn:focus, .operatorBtn:hover,
 .numBtn:active,
-.numBtn:focus {
+.numBtn:focus,
+.numBtn:hover {
   background: #c8c8c5;
 }
 /*# sourceMappingURL=styles.css.map */

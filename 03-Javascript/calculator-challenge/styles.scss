@@ -22,7 +22,7 @@
   &__keys {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    background: #d0d0d0;
+
     gap: 0.125em;
 
     & > button {
@@ -38,7 +38,8 @@
   font-size: 1.5rem;
 
   &:active,
-  &:focus {
+  &:focus,
+  &:hover {
     background: #f28d00;
   }
 }
@@ -58,7 +59,8 @@
 .operatorBtn,
 .numBtn {
   &:active,
-  &:focus {
+  &:focus,
+  &:hover {
     background: #c8c8c5;
   }
 }
