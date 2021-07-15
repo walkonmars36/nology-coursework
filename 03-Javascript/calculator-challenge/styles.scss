@@ -7,7 +7,7 @@
 .calculator {
   margin: 6em auto;
   max-width: 400px;
-  border: 1px solid #ccc;
+  //border: 1px solid #ccc;
   border-radius: 5px;
 
   &__screen {
@@ -17,11 +17,12 @@
   &__entry {
     flex-grow: 1;
     text-align: right;
-    padding: 2em;
-    font-size: 1.5rem;
+    padding: 1em;
+    font-size: 2rem;
     background: #1c1c1c;
     border: none;
     color: whitesmoke;
+    overflow-x: auto;
   }
 
   &__keys {
@@ -32,15 +33,15 @@
   }
 }
 
-.equalBut {
+.equalBtn {
   grid-column: 4;
   grid-row: 2 / 6;
   background: #ff9500;
   border: 1px solid #505050;
 }
 
-.mathBut,
-.numBut {
+.mathBtn,
+.numBtn {
   padding: 2.5em;
   background: #d4d4d2;
   border: 1px solid #505050;
