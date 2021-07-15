@@ -4,12 +4,13 @@
 // a result value - resultVal
 // and a false value for decimal clicked to prevent user from entering multiple decimals
 
-let prevVal = "";
-let newVal = "";
-let resultVal = "";
-let mathOperator = "";
+let prevVal = ""; // Stores previous entered number
+let newVal = ""; // Stores current entry
+let resultVal = ""; // Stores resulting value and displays to screen
+let mathOperator = ""; // Stores the operator + - / *
 let decimalClicked = false;
 
+////// FUNCTION FOR NUMBER BUTTON PRESS
 function numButPress(num) {
   if (resultVal) {
     newVal = num;
