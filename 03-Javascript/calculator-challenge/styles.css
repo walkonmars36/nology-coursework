@@ -8,7 +8,8 @@
 .calculator {
   margin: 6em auto;
   max-width: 400px;
-  border-radius: 5px;
+  border-radius: 15px;
+  overflow: hidden;
 }
 
 .calculator__screen {
@@ -22,12 +23,11 @@
       -ms-flex-positive: 1;
           flex-grow: 1;
   text-align: right;
-  padding: 1em;
+  padding: 1.5em 1em;
   font-size: 2rem;
   background: #1c1c1c;
   border: none;
   color: whitesmoke;
-  overflow-x: auto;
 }
 
 .calculator__keys {
@@ -35,6 +35,7 @@
   display: grid;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
+  gap: 0.07em;
 }
 
 .equalBtn {
@@ -44,15 +45,27 @@
   -ms-grid-row-span: 4;
   grid-row: 2 / 6;
   background: #ff9500;
-  border: 1px solid #505050;
+  font-size: 1.5rem;
+}
+
+button {
+  border: none;
+  border-radius: none;
+}
+
+.numBtn {
+  padding: 1.75em;
+  font-size: 1.25rem;
+}
+
+.mathBtn {
+  font-size: 1.5rem;
+  padding: 1.5em;
 }
 
 .mathBtn,
 .numBtn {
-  padding: 2.5em;
   background: #d4d4d2;
-  border: 1px solid #505050;
-  font-size: 1rem;
 }
 
 .mathBtn:hover,
