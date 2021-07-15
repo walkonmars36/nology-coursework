@@ -1,17 +1,12 @@
-// Need to have a previous value - prevVal
-// a new value - newVal
-// an operator - mathOperator
-// a result value - resultVal
-// and a false value for decimal clicked to prevent user from entering multiple decimals
-
-let prevVal = ""; // Stores previous entered number
-let newVal = ""; // Stores current entry
+let prevVal = ""; // Stores previous entered value
+let newVal = ""; // Stores currently entered value
 let resultVal = ""; // Stores resulting value and displays to screen
 let mathOperator = ""; // Stores the operator + - / *
-let decimalClicked = false;
+let decimalClicked = false; // Initial state of decimal point
 
-////// FUNCTION FOR NUMBER BUTTON PRESS
-function numButPress(num) {
+////// called when a number button is pressed
+function numBtnPress(num) {
+  // first check if a number has already been clicked
   if (resultVal) {
     newVal = num;
     resultVal = "";
@@ -23,10 +18,11 @@ function numButPress(num) {
   } else {
     newVal += num;
   }
-  document.getElementById("calc-entry").value = newVal;
+  document.getElementById("calc-display").value = newVal;
 }
 
-function mathButPress(operator) {
+////// () FOR OPERATOR BUTTON PRESS
+function operatorBtnPress(operator) {
   if (!resultVal) {
     prevVal = newVal;
   } else {
@@ -36,10 +32,10 @@ function mathButPress(operator) {
   decimalClicked = false;
   mathOperator = operator;
   resultVal = "";
-  document.getElementById("calc-entry").value = "";
+  document.getElementById("calc-display").value = prevVal;
 }
 
-function equalButPress() {
+function equalBtnPress() {
   decimalClicked = false;
   prevVal = parseFloat(prevVal);
   newVal = parseFloat(newVal);
@@ -62,14 +58,14 @@ function equalButPress() {
   }
 
   prevVal = resultVal;
-  document.getElementById("calc-entry").value = resultVal;
+  document.getElementById("calc-display").value = resultVal;
 }
 
-function clearButPress() {
+function clearBtnPress() {
   prevVal = "";
   newVal = "";
   resultVal = "";
-  mathOperator = "";
+  operator = "";
   decimalClicked = false;
-  document.getElementById("calc-entry").value = "0";
+  document.getElementById("calc-display").value = "0";
 }

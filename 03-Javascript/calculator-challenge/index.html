@@ -10,15 +10,15 @@
   </head>
   <body>
     <div class="calculator">
-      <!--Calculator screen-->
-      <div class="calculator__screen"><input type="text" id="calc-entry" class="calculator__entry" value="0" readonly /> </div>
+      <!--Calculator display-->
+      <div><input type="text" id="calc-display" class="calculator__display" value="0" readonly /> </div>
 
       <!--Calculator keys-->
       <div class="calculator__keys">
-        <button class="mathBtn" value="+" onclick="mathBtnPress('+')">+</button>
-        <button class="mathBtn" value="-" onclick="mathBtnPress('-')">-</button>
-        <button class="mathBtn" value="*" onclick="mathBtnPress('*')">&times;</button>
-        <button class="mathBtn" value="/" onclick="mathBtnPress('/')">&divide;</button>
+        <button class="operatorBtn" value="+" onclick="operatorBtnPress('+')">+</button>
+        <button class="operatorBtn" value="-" onclick="operatorBtnPress('-')">-</button>
+        <button class="operatorBtn" value="*" onclick="operatorBtnPress('*')">&times;</button>
+        <button class="operatorBtn" value="/" onclick="operatorBtnPress('/')">&divide;</button>
 
         <button class="numBtn" value="7" onclick="numBtnPress(7)">7</button>
         <button class="numBtn" value="8" onclick="numBtnPress(8)">8</button>
