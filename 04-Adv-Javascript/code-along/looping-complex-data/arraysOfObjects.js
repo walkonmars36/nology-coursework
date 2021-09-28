@@ -105,6 +105,7 @@ const generateFruitHTML = (fruitArray) => {
   });
   return html.join("");
 };
+``;
 
 // ALTERNATIVE TO UPPER CASE METHOD
 // fruitObject.fruit[0].toUpperCase()
