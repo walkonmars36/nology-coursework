@@ -60,8 +60,8 @@ const getBeer = () => {
       h1BeerName.innerHTML = beerName;
       h4Tagline.innerHTML = tagline;
       descriptionText.innerHTML = description;
-      alcByVolume.innerHTML = abv;
-      firstFood.innerHTML = foodPairing;
+      alcByVolume.innerHTML = abv + "&percnt;" + " " + "abv";
+      firstFood.innerHTML = "Pair with" + " " + foodPairing;
     });
 
   generateBeerBtn.addEventListener("click", getBeer);
