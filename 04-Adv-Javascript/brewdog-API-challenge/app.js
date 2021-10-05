@@ -27,3 +27,24 @@ const getBeer = () => {
 };
 
 getBeer();
+
+// Below is Sam's solution to learn from, so I can have a go at refactoring mine
+
+// const makeBeerCard = (beer) => {
+//   return `
+//      <div class="beer-container">
+//          <h1>${beer.name}</h1>
+//          <h4>${beer.tagline}</h4>
+//          <p>${beer.description}</p>
+//          <h3>${beer.abv}</h3>
+//          <p>Best served with: ${beer.food_pairing}</p>
+//      </div>
+//  }
+
+// const getRandomBeer = () => {
+//   fetch("https://api.punkapi.com/v2/beers/random")
+//      .then(res => res.json())
+//      .then(json => document.body.innerHTML += makeBeerCard(json[0]))
+// }
+
+// getRandomBeer()
