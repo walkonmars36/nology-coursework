@@ -1,7 +1,7 @@
-import "./App.css";
+import styles from "./App.module.scss";
 
 const App = () => {
-  return <p>Hello App</p>;
+  return <p className={styles.green}>Hello App</p>;
 };
 
 export default App;
