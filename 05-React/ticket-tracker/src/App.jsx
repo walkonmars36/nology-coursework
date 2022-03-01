@@ -1,7 +1,20 @@
+import React from "react";
+import team from "./data";
 import styles from "./App.module.scss";
+import Employee from "./components/Employee";
 
 const App = () => {
-  return <p className={styles.green}>Hello App</p>;
+  const getEmployee = (teamMember) => (
+    <div key={teamMember.id}>
+      <Employee teamMember={teamMember} />
+    </div>
+  );
+
+  return (
+    <>
+      <section className={styles.content}>{team.map(getEmployee)}</section>
+    </>
+  );
 };
 
 export default App;
