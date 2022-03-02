@@ -1,7 +1,8 @@
 import React from "react";
-import team from "./data";
 import styles from "./App.module.scss";
+import team from "./data";
 import Employee from "./components/Employee";
+import Counter from "./components/Counter";
 
 const App = () => {
   const getEmployee = (teamMember) => (
@@ -9,11 +10,13 @@ const App = () => {
       <Employee teamMember={teamMember} />
     </div>
   );
-
   return (
-    <>
-      <section className={styles.content}>{team.map(getEmployee)}</section>
-    </>
+    <section className={styles.content}>
+      <div>{team.map(getEmployee)}</div>
+      <div>
+        <Counter />
+      </div>
+    </section>
   );
 };
 
