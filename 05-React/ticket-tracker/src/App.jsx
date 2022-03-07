@@ -1,19 +1,22 @@
 import React from "react";
 import team from "./data";
 import styles from "./App.module.scss";
-import Employee from "./components/Employee";
+import EmployeeCard from "./components/EmployeeCard/EmployeeCard";
+// import NavBar from "./components/NavBar/NavBar";
 
 const App = () => {
-  const getEmployee = (teamMember) => (
+  const getEmployeeCard = (teamMember) => (
     <div key={teamMember.id}>
-      <Employee teamMember={teamMember} />
+      <EmployeeCard teamMember={teamMember} />
     </div>
   );
 
   return (
-    <>
-      <section className={styles.content}>{team.map(getEmployee)}</section>
-    </>
+    // <nav>
+    //   <NavBar />
+    // </nav>
+
+    <section className={styles.content}>{team.map(getEmployeeCard)}</section>
   );
 };
 

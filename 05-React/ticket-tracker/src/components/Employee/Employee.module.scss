@@ -1,24 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Inter", sans-serif;
-  background-color: #b2edc5;
-}
-
-.employeeCard {
-  background-color: #231e39;
-  border-radius: 5px;
-  box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
-  width: 275px;
-  max-width: 100%;
-  padding: 2em;
-  color: #b3b8cd;
+.employeeDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   & h2 {
     font-weight: 700;
@@ -37,43 +20,5 @@ body {
     border-radius: 50%;
     border: 1px solid #03bfcb;
     padding: 7px;
-  }
-}
-
-.employeeDetails {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.counterArea {
-  background-color: #1f1a36;
-  border: 1px solid #03becb50;
-  border-radius: 5px;
-  text-align: center;
-  margin-top: 3rem;
-
-  & h4 {
-    margin-top: 2rem;
-  }
-}
-
-.buttonArea {
-  display: flex;
-  justify-content: space-around;
-
-  margin: 1rem 0 2rem;
-
-  & button {
-    padding: 1.5em;
-    font-family: inherit;
-    font-size: 1rem;
-    border: none;
-    background-color: #03bfcb;
-    cursor: pointer;
-  }
-
-  & span {
-    font-size: 3rem;
   }
 }
