@@ -1,13 +1,13 @@
 import React from "react";
-import styles from "./Main.module.scss";
-import CardList from "../CardList/CardList";
 
-const Main = () => {
+import styles from "./Main.module.scss";
+import CardList from "../../components/CardList/CardList";
+
+const Main = ({beers}) => {
   return (
     <div className={styles.main}>
-      <h2>Main section</h2>
       <div>
-        <CardList />
+        <CardList beers={beers} />
       </div>
     </div>
   );

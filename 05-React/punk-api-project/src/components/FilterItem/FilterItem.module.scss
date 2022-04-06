@@ -4,7 +4,8 @@
   border: 1px solid navy;
   margin: 1rem;
 
-  ul {
-    list-style: none;
+  & form {
+    text-align: left;
+    margin: 1rem;
   }
 }

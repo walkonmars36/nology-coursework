@@ -1,10 +1,10 @@
 import React from "react";
 import styles from "./SearchBox.module.scss";
 
-const SearchBox = () => {
+const SearchBox = ({val, onSearch}) => {
   return (
     <div className={styles.search}>
-      <h3>I Am The SearchBox</h3>
+      <input type="text" value={val} onChange={onSearch} placeholder="search beers" />
     </div>
   );
 };
