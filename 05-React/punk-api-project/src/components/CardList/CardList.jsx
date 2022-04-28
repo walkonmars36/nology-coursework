@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./CardList.module.scss";
-import Card from "../Card/Card";
+import CardFront from "../CardFront/CardFront";
 
 const CardList = ({beers}) => {
   return (
@@ -9,7 +9,7 @@ const CardList = ({beers}) => {
       <div className={styles.cards}>
         <div>
           {beers.map((beers) => (
-            <Card beers={beers} key={beers.id} />
+            <CardFront beers={beers} key={beers.id} />
           ))}
         </div>
       </div>
