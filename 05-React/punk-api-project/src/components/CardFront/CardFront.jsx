@@ -5,7 +5,7 @@ const Card = ({beers}) => {
   // When destructuring, had to give props a default of {}, otherwise I was getting property undefined and page woudn't load
   const {name, description, abv} = beers || {};
   return (
-    <div className={styles.card}>
+    <div className={styles.cardFront}>
       <p>{name}</p>
       <p>{description}</p>
       <p>{abv}</p>
