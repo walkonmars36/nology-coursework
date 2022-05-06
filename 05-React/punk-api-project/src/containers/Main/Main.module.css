@@ -1,0 +1,20 @@
+.main {
+  border: 1px solid #f5f5f5;
+  margin: 1em;
+  padding: 1em;
+}
+
+.main .pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 2em 0;
+}
+
+.main .pagination button {
+  margin-left: 0.5em;
+}
+/*# sourceMappingURL=Main.module.css.map */

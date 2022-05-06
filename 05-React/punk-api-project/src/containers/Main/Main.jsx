@@ -9,6 +9,10 @@ const Main = ({beers}) => {
       <div>
         <CardList beers={beers} />
       </div>
+      <div className={styles.pagination}>
+        <button>Previous Page</button>
+        <button>Next Page</button>
+      </div>
     </div>
   );
 };

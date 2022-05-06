@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AACE,WADS,CACP,IAAI,CAAC;EACL,OAAO,EAAE,IAAI;CACd",
+    "sources": [
+        "FilterList.module.scss"
+    ],
+    "names": [],
+    "file": "FilterList.module.css"
+}

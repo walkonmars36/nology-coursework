@@ -3,12 +3,14 @@ import styles from "./NavBar.module.scss";
 import SearchBox from "../../components/SearchBox/SearchBox";
 import FilterList from "../../components/FilterList/FilterList";
 
-const NavBar = ({val, onSearch}) => {
+const NavBar = ({filterItems, searchFilter}) => {
   return (
     <div className={styles.nav}>
       <div>
-        <SearchBox val={val} onSearch={onSearch} />
-        <FilterList />
+        <FilterList filterItems={filterItems} />
+      </div>
+      <div>
+        <SearchBox searchFilter={searchFilter} />
       </div>
     </div>
   );

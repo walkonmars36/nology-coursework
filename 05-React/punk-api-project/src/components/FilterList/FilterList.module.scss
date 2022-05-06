@@ -1,5 +1,5 @@
 .filterList {
-  background-color: #4c6ef5;
-  color: white;
-  border: 1px solid white;
+  & form {
+    display: flex;
+  }
 }

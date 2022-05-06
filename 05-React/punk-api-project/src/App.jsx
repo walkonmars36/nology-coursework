@@ -8,14 +8,14 @@ import Main from "./containers/Main";
 
 function App() {
   const [beers, setBeers] = useState([]);
-  const [searchTerm, setSearchTerm] = useState("");
-  const [abvOver6, setAbvOver6] = useState([]);
+
+  const [filteredBeers, setFilteredBeers] = useState([]);
 
   // Initial api call sets all beers to initial state - beers
 
-  const API_URL = "https://api.punkapi.com/v2/beers/";
+  const API_URL = "https://api.punkapi.com/v2/beers?page=2&per_page=80";
 
-  const getBeers = () => {
+  useEffect(() => {
     axios
       .get(API_URL)
       .then((res) => setBeers(res.data))
@@ -23,36 +23,76 @@ function App() {
       .catch((err) => {
         console.log(err);
       });
-  };
-
-  useEffect(() => {
-    getBeers();
   }, []);
 
-  ////// Api call for high abv > 6
+  /// useEffect to mount setfilteredBeers
+  useEffect(() => {
+    setFilteredBeers(beers);
+  }, [beers]);
 
-  const API_GT_6 = "https://api.punkapi.com/v2/beers?abv_gt=6";
-
-  ////// Search
-  const handleInputChange = (e) => {
-    setSearchTerm(e.target.value);
+  //// HIGH ABV
+  const highABV = (event) => {
+    if (event.target.checked) {
+      const filteredHigh = beers.filter((beer) => beer.abv > 6);
+      setFilteredBeers(filteredHigh);
+    } else {
+      setFilteredBeers(beers);
+    }
   };
 
-  const searchBeers = beers.filter((beer) => beer.name.toLowerCase().includes(searchTerm));
+  /// CLASSIC RANGE
+  const classicRange = (event) => {
+    if (event.target.checked) {
+      const filteredClassic = beers.filter((beer) => beer.first_brewed.split("/")[1] <= 2010);
+      setFilteredBeers(filteredClassic);
+    } else {
+      setFilteredBeers(beers);
+    }
+  };
+
+  //// ACIDIC
+  const acidicPH = (event) => {
+    if (event.target.value) {
+      const filteredAcidic = beers.filter((beer) => beer.ph < 4);
+      setFilteredBeers(filteredAcidic);
+    } else {
+      setFilteredBeers(beers);
+    }
+  };
+
+  ////// Search
+  const searchFilter = (event) => {
+    if (event.target.value) {
+      const searchBeers = beers.filter((beer) => beer.name.toLowerCase().includes(event.target.value));
+      setFilteredBeers(searchBeers);
+    } else {
+      setFilteredBeers(beers);
+    }
+  };
 
   ///// End search
 
   return (
     <div className={styles.App}>
       <div className={styles.content}>
-        <NavBar onSearch={handleInputChange} val={searchTerm} />
-        <Main beers={searchBeers} />
+        <NavBar
+          searchFilter={searchFilter}
+          filterItems={[
+            {name: "High ABV (>6.0%)", filteredAlcohol: (event) => highABV(event)},
+            {name: "Classic Range", filteredAlcohol: (event) => classicRange(event)},
+            {name: "Acidic (ph < 4)", filteredAlcohol: (event) => acidicPH(event)},
+          ]}
+        />
+
+        <Main beers={filteredBeers} />
       </div>
     </div>
   );
 }
 
 export default App;
+
+// lastBeers={lastBeers} nextBeers={nextBeers}
 
 // map helper function option
 // const getBeers = (beers) => <Main beer={beers}/>

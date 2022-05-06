@@ -1,0 +1,15 @@
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: grey;
+  border: 1px solid blue;
+  margin: 1em;
+}
+
+.nav ul {
+  border: 1px solid white;
+}
+/*# sourceMappingURL=NavBar.module.css.map */

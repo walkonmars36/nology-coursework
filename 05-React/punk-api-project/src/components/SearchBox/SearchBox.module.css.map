@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,OAAO,CAAC;EACN,gBAAgB,EAAE,IAAI;EACtB,KAAK,EAAE,OAAO;EAEd,OAAO,EAAE,GAAG;CACb",
+    "sources": [
+        "SearchBox.module.scss"
+    ],
+    "names": [],
+    "file": "SearchBox.module.css"
+}
