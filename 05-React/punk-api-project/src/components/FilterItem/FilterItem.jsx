@@ -1,11 +1,11 @@
 import React from "react";
 import styles from "./FilterItem.module.scss";
 
-const FilterItem = ({alcoholRange, filteredAlcohol}) => {
+const FilterItem = ({isChecked, label, checkHandler, index, filteredBy}) => {
   return (
     <div className={styles.filterItem}>
-      {alcoholRange}
-      <input type="checkbox" onChange={filteredAlcohol} />
+      <input type="checkbox" id={`checkbox-${index}`} checked={isChecked} onChange={checkHandler} />
+      <label htmlFor={`checkbox-${index}`}>{label}</label>
     </div>
   );
 };

@@ -13,76 +13,28 @@ function App() {
 
   // Initial api call sets all beers to initial state - beers
 
-  const API_URL = "https://api.punkapi.com/v2/beers?page=2&per_page=80";
+  const getBeers = async () => {
+    const API_URL = "https://api.punkapi.com/v2/beers";
+    let url = API_URL;
+
+    const res = await fetch(url);
+    const data = await res.json();
+    setBeers(data);
+  };
 
   useEffect(() => {
-    axios
-      .get(API_URL)
-      .then((res) => setBeers(res.data))
-
-      .catch((err) => {
-        console.log(err);
-      });
+    getBeers();
   }, []);
 
-  /// useEffect to mount setfilteredBeers
+  /// useEffect to mount setFilteredBeers
   useEffect(() => {
     setFilteredBeers(beers);
   }, [beers]);
 
-  //// HIGH ABV
-  const highABV = (event) => {
-    if (event.target.checked) {
-      const filteredHigh = beers.filter((beer) => beer.abv > 6);
-      setFilteredBeers(filteredHigh);
-    } else {
-      setFilteredBeers(beers);
-    }
-  };
-
-  /// CLASSIC RANGE
-  const classicRange = (event) => {
-    if (event.target.checked) {
-      const filteredClassic = beers.filter((beer) => beer.first_brewed.split("/")[1] <= 2010);
-      setFilteredBeers(filteredClassic);
-    } else {
-      setFilteredBeers(beers);
-    }
-  };
-
-  //// ACIDIC
-  const acidicPH = (event) => {
-    if (event.target.value) {
-      const filteredAcidic = beers.filter((beer) => beer.ph < 4);
-      setFilteredBeers(filteredAcidic);
-    } else {
-      setFilteredBeers(beers);
-    }
-  };
-
-  ////// Search
-  const searchFilter = (event) => {
-    if (event.target.value) {
-      const searchBeers = beers.filter((beer) => beer.name.toLowerCase().includes(event.target.value));
-      setFilteredBeers(searchBeers);
-    } else {
-      setFilteredBeers(beers);
-    }
-  };
-
-  ///// End search
-
   return (
     <div className={styles.App}>
       <div className={styles.content}>
-        <NavBar
-          searchFilter={searchFilter}
-          filterItems={[
-            {name: "High ABV (>6.0%)", filteredAlcohol: (event) => highABV(event)},
-            {name: "Classic Range", filteredAlcohol: (event) => classicRange(event)},
-            {name: "Acidic (ph < 4)", filteredAlcohol: (event) => acidicPH(event)},
-          ]}
-        />
+        <NavBar beers={beers} setFilteredBeers={setFilteredBeers} />
 
         <Main beers={filteredBeers} />
       </div>

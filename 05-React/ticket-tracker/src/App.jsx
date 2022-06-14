@@ -11,13 +11,7 @@ const App = () => {
     </div>
   );
 
-  return (
-    // <nav>
-    //   <NavBar />
-    // </nav>
-
-    <section className={styles.content}>{team.map(getEmployeeCard)}</section>
-  );
+  return <section className={styles.content}>{team.map(getEmployeeCard)}</section>;
 };
 
 export default App;
